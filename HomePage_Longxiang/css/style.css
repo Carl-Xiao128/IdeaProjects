@@ -1,0 +1,12 @@
+.font1{font-weight: bold;}
+.font2{font-family: "Hannotate SC";font-style: oblique}
+.img-me{height:240px;border-radius: 20px;}
+.badge-float{float: right;}
+.span-center{text-align: center;}
+.div-margin-top{margin-top: 10px;}
+.woman-color{color: #b713bf;}
+.man-color{color: #05720b;}
+.a-under-line:hover{text-underline: #dae0e5;}
+li::first-letter{font-size: 1.5vmax;color: #0a99e5;}
+p::first-letter{font-size: 3.6vmax;color: #e5e50e;}
+h1::first-letter{font-size: 2.5vmax;color: #e50fc9;font-family: "Trebuchet MS"}
