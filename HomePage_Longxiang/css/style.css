@@ -4,6 +4,8 @@
 .img-icon{width: 15px;height: 15px;border-radius: 5px;}
 .img-vertical{vertical-align: middle;margin:auto;}
 .img-movies{width: 160px;margin: 10px auto;}
+.card-raddius{border-radius: 20px;}
+.card-divider {height: 0;margin: .5rem 0;overflow: hidden;border-top: 1px solid #e9ecef;}
 .badge-float{float: right;}
 .span-center{text-align: center;}
 .div-margin-top{margin-top: 10px;}
