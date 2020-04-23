@@ -32,18 +32,18 @@ li{
     margin:10px 5px;
 }
 /*way2*/
-ul {
-    background-color:red;
-    padding:20px;
-    text-align:center;
-}
-li{
-    display:inline;
-    background-color:white;
-    border:1px solid black;
-    padding:5px;
-    margin:10px 5px;
-}
+/*ul {*/
+/*    background-color:red;*/
+/*    padding:20px;*/
+/*    text-align:center;*/
+/*}*/
+/*li{*/
+/*    display:inline;*/
+/*    background-color:white;*/
+/*    border:1px solid black;*/
+/*    padding:5px;*/
+/*    margin:10px 5px;*/
+/*}*/
 
 /*practice 3*/
 #container{
@@ -51,6 +51,8 @@ li{
     padding:10px;
     width:500px;
     background-color:lightgray;
+    border:1px solid black;
+    margin: 10px 0;
 }
 .header{
     background-color:yellow;
@@ -76,3 +78,28 @@ li{
 .area-backcolor{
     background-color:lightblue;
 }
+
+/*practice 4,5,6*/
+.practice-float{
+    width:500px;
+    border:1px solid black;
+    margin:10px 0;
+}
+.a, .b {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+}
+#prac4 .a { background-color: lightblue;float: left;}
+#prac4 .b { background-color: pink;float:right;}
+#prac4 .c { background-color: lightgray;}
+
+#prac5 .a { background-color: lightblue;float: left}
+#prac5 .b { background-color: pink;clear:left;float:right;}
+#prac5 .c { background-color: lightgray;}
+
+#prac6 .a { background-color: lightblue;}
+#prac6 .b { background-color: pink;clear:left;float:right;}
+#prac6 .c { background-color: lightgray;}
