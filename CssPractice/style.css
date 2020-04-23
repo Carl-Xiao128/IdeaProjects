@@ -1,0 +1,78 @@
+/*practice 1*/
+#outer {
+    border: 2px dashed black;
+    padding: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 10px;
+    display:inline-block;
+}
+.first-line{
+    display:block;
+}
+
+/*practice 2*/
+/*way1*/
+ul {
+    background-color:red;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    display:inline;
+    background-color:white;
+    border:1px solid black;
+    padding:5px;
+    margin:10px 5px;
+}
+/*way2*/
+ul {
+    background-color:red;
+    padding:20px;
+    text-align:center;
+}
+li{
+    display:inline;
+    background-color:white;
+    border:1px solid black;
+    padding:5px;
+    margin:10px 5px;
+}
+
+/*practice 3*/
+#container{
+    box-sizing:border-box;
+    padding:10px;
+    width:500px;
+    background-color:lightgray;
+}
+.header{
+    background-color:yellow;
+    margin:10px auto;
+}
+.area{
+    width:100px;
+    margin:0px 5px;
+    padding:1px;
+    float:right;
+    overflow : scroll;
+
+}
+.area1-h{
+    height:180px;
+}
+.area2-h{
+    height:110px;
+}
+.area3{
+    padding:1px 0;
+}
+.area-backcolor{
+    background-color:lightblue;
+}
