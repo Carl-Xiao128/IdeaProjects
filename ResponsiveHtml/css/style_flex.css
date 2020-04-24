@@ -1,17 +1,24 @@
 @media screen and (min-width:600px) { /* any screen > 600px */
-    .column1{float: left;}
-    .column2{float: left;}
-    .column3{float: left;}
-    #nav div {
-        float: left;
-    }
+
 }
 @media screen and (max-width:599px) {/* any screen < 600px */
-    .column1{width: 50% !important;}
-    .column3{width: 50% !important;float: left}
-    .column2{width: 100% !important;clear: left;float: left}
+    #nav{
+        flex-direction: column !important;
+    }
     #nav div {
         width: 100% !important;
+    }
+    .column1{
+        order: 1 !important;
+        width: 50% !important;
+    }
+    .column3{
+        order: 2 !important;
+        width: 50% !important;
+    }
+    .active {
+        order: 10 !important;
+        flex: 1 0 100% !important;
     }
 }
 body{
@@ -22,40 +29,14 @@ body{
     width: 100%;
     background-color: #3eecff;
 }
-/*#nav{*/
-/*    background-color: #149cff;*/
-/*    font-size: 0;*/
-/*}*/
-/*#nav div {*/
-/*    display: inline-block;*/
-/*    width: 50px;*/
-/*    font-size: 15px;*/
-/*    text-align: center;*/
-/*    background-color: grey;*/
-/*    padding: 20px;*/
 
-/*}*/
-/*#nav{*/
-/*    background-color: #149cff;*/
-/*    font-size: 0;*/
-/*    padding: 20px 0;*/
-/*}*/
-/*#nav div {*/
-/*    display: inline;*/
-/*    width: 50px;*/
-/*    font-size: 15px;*/
-/*    text-align: center;*/
-/*    background-color: grey;*/
-/*    padding: 20px;*/
-/*}*/
 #nav{
     background-color: #149cff;
-    font-size: 0;
     width: 100%;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
 #nav div {
-    float: left;
     width: 50px;
     font-size: 1rem;
     text-align: center;
@@ -64,19 +45,24 @@ body{
     border: 1px solid black;
 }
 #content{
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .column1{
+    order: 1;
     width: 30%;
     height: 200px;
     background-color: #959595;
 }
 .column2{
+    order: 2;
     width:40%;
     height: 200px;
     background-color: #bbbbbb;
 }
 .column3{
+    order: 3;
     width: 30%;
     height: 200px;
     background-color: #d3d3d3;
