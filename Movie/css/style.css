@@ -3,13 +3,13 @@ body {
     background: url("../images/background.png");
 }
 
-.page-header {
+.header {
     text-align: center;
     background: url("../images/bannerbg.png");
 }
 
 
-.header-title {
+.header-h {
     text-align: center;
     text-shadow: 1px 2px gray;
     font-weight: bold;
@@ -18,7 +18,7 @@ body {
 .content {
     width: 800px;
     margin: auto;
-    border: 5px solid gray;
+    border: 2px solid #909090;
     border-radius: 15px;
     overflow: hidden;
     display: flex;
@@ -86,6 +86,15 @@ body {
     padding: 5px 0;
 }
 
-.validator{
-    float: right;
+.val1{
+    position: relative;
+    top: -4em;
+    height: 0;
+    text-align: right;
+}
+.val2{
+    position: relative;
+    top: -2em;
+    height: 0;
+    text-align: right;
 }
