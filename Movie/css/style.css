@@ -1,6 +1,8 @@
 body {
     margin: 0;
     background: url("../images/background.png");
+    font-size: 8pt;
+    font-family: Verdana;
 }
 
 .header {
@@ -18,16 +20,19 @@ body {
 .content {
     width: 800px;
     margin: auto;
-    border: 2px solid #909090;
-    border-radius: 15px;
+    border: 4px solid grey;
+    border-radius: 20px;
     overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .right-side {
     width: 250px;
     order: 2;
     background: rgb(162,185,100);
+    font-size: 8pt;
+    font-family: sans-serif;
 }
 .right-side dl{
     padding: 0 10px;
@@ -53,7 +58,6 @@ body {
 }
 
 .left-side .card {
-    width:   calc(50% - 10px);
     float: left;
     padding: 5px;
 }
@@ -71,30 +75,50 @@ body {
     float: left;
 }
 
+.left-bottom{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-left-side{
+    order:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-right-side{
+    order:1;
+    display: flex;
+    flex-direction: column;
+}
+
 .rotten {
     background: url("../images/rbg.png");
     color: red;
-    font-size: 72px;
-    font-weight: bolder;
+    font-size: 48pt;
+    font-weight: bold;
     display: flex;
 }
 
 .footer{
     text-align: center;
-    background: rgb(162,185,100);
+    background-color: #A2B964;
     margin: 0;
     padding: 5px 0;
 }
 
 .val1{
-    position: relative;
-    top: -4em;
-    height: 0;
-    text-align: right;
+    position: fixed;
+    bottom: 3em;
+    right: 10px;
+    opacity: 0.5;
+
 }
 .val2{
-    position: relative;
-    top: -2em;
-    height: 0;
-    text-align: right;
+    position: fixed;
+    bottom: 0em;
+    right: 10px;
+    opacity: 0.5;
 }
+
