@@ -5,11 +5,16 @@
     #nav div {
         float: left;
     }
+    #content{display: block;}
+    #contentHidden{display: none;}
 }
 @media screen and (max-width:599px) {/* any screen < 600px */
-    .column1{width: 50% !important;}
+    #content{display: none;}
+    #contentHidden{display: block;}
+    .column1{width: 50% !important;float: left}
     .column3{width: 50% !important;float: left}
     .column2{width: 100% !important;clear: left;float: left}
+    #footer{clear: left;}
     #nav div {
         width: 100% !important;
     }
@@ -64,7 +69,7 @@ body{
     border: 1px solid black;
 }
 #content{
-    overflow: hidden;
+    overflow: auto;
 }
 .column1{
     width: 30%;
