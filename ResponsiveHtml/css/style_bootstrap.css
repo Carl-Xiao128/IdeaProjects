@@ -1,8 +1,8 @@
-@media screen and (min-width:960px) { /* any screen > 600px */
+@media screen and (min-width:990px) { /* any screen > 600px */
     .order-0{order: 0;}
     .order-2{order: 2;}
 }
-@media screen and (max-width:960px) {/* any screen < 600px */
+@media screen and (max-width:989px) {/* any screen < 600px */
     .order-0{order: 2!important;}
     .order-2{order: 0!important;}
 }
