@@ -12,25 +12,25 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- My stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_page2.css" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: #2BA2E6!important;">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active" style="border-right: 1px solid white;">
+                <li class="nav-item active nav-li">
                     <a class="nav-link" href="#">MUM Golden Market ::: SRM System</span></a>
                 </li>
-                <li class="nav-item" style="border-right: 1px solid white;">
+                <li class="nav-item nav-li">
                     <a class="nav-link" href="#">Products</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-li">
                     <a class="nav-link" href="#">Supplies</span></a>
                 </li>
             </ul>
@@ -39,7 +39,9 @@
             <button class="btn btn-sm btn-outline-light" type="button">Sign Out</button>
         </form>
     </nav>
-    <div class="container" style="text-align: center;margin: 20px auto;">
+
+
+    <div class="container container-title">
         <div class="row">
             <div class="col-lg-12">
                 <h1>MUM Golden Market SRM System</h1>
@@ -47,10 +49,10 @@
         </div>
     </div>
     <div class="container">
-        <div class="card">
+        <div class="card text-center">
             <div class="card-body">
-                <form style="text-align: left;">
-                    <div class="row"  style="margin-bottom: 10px;">
+                <form class="form-text">
+                    <div class="row card-row">
                         <div class="col-lg-6">
                             <label for="productNumber">Product Number</label>
                             <input type="text" class="form-control" id="productNumber">
@@ -60,7 +62,7 @@
                             <input type="text" class="form-control" id="quantityInStock">
                         </div>
                     </div>
-                    <div class="row"  style="margin-bottom: 10px;">
+                    <div class="row card-row">
                         <div class="col-lg-6">
                             <label for="name">Name</label>
                             <input type="text" class="form-control" id="name">
@@ -74,7 +76,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="row"  style="margin-bottom: 10px;">
+                    <div class="row card-row">
                         <div class="col-lg-6">
                             <label for="unitPrice">Unit Price</label>
                             <input type="text" class="form-control" id="unitPrice">
@@ -84,16 +86,20 @@
                             <input type="text" class="form-control" id="dateSupplied">
                         </div>
                     </div>
-                    <div class="row" style="margin-bottom: 10px; text-align: right;">
+                    <div class="row card-row" style="text-align: right;">
                         <div class="col-lg-12">
-                            <button type="submit" class="btn" style="border-color: #17a2b8;">Reset</button>
-                            <button type="submit" class="btn" style="border-color: #dc3545;">Cancel</button>
-                            <button type="submit" class="btn" style="border-color: #007bff;">Submit</button>
+                            <button type="submit" class="btn bt-reset">Reset</button>
+                            <button type="submit" class="btn bt-cancel">Cancel</button>
+                            <button type="submit" class="btn bt-add">Submit</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

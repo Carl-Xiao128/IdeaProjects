@@ -1,0 +1,53 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.nav-bg{
+    background-color: #2BA2E6;
+}
+.nav-li{
+    border-right: 1px solid white;
+}
+.container-title{
+    text-align: center;
+    margin: 3% auto;
+}
+.text-center{
+    border-radius: 20px;
+    box-shadow: black 0px 0px 5px;
+    margin: 8% auto;
+}
+.form-text{
+    text-align: left;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 1.25em;
+}
+.card-row{
+    margin-bottom: 10px;
+}
+h1{
+    text-shadow: 0.1em 0.1em 0.2em grey;
+}
+.bt-reset{
+    border-color: #17a2b8;
+}
+.bt-reset:hover{
+    background-color: #17a2b8;
+    color: white;
+}
+.bt-cancel{
+    border-color: #dc3545;
+}
+.bt-cancel:hover{
+    background-color: #dc3545;
+    color: white;
+}
+.bt-add{
+    border-color: #007bff;
+}
+.bt-add:hover{
+    background-color: #007bff;
+    color: white;
+}
