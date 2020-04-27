@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>BasicJavascript</title>
+    <title>JavascriptEnvironment</title>
     <meta name="keywords" content="HTML,CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="basic_javascript">
@@ -17,41 +17,12 @@
 </head>
 
 <body>
-    <h1>Basic JavaScript</h1>
-    <!-- practice1 -->
-    <hr/>
-    <h2>practice1</h2>
-    <p>Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript</p>
-    <label for="n1">Input n1:</label>
-    <input type="text" id="n1" oninput = "value=value.replace(/[^\d]/g,'')">
-    <label for="n2">Input n2:</label>
-    <input type="text" id="n2" oninput = "value=value.replace(/[^\d]/g,'')">
-    <button id="max" onclick="max();">Max</button>
-
-    <!-- practice2 -->
-    <hr/>
-    <h2>practice2</h2>
-    <p>Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them</p>
-    <label for="p2n1">Input n1:</label>
-    <input type="text" id="p2n1" oninput = "value=value.replace(/[^\d]/g,'')">
-    <label for="p2n2">Input n2:</label>
-    <input type="text" id="p2n2" oninput = "value=value.replace(/[^\d]/g,'')">
-    <label for="p2n3">Input n3:</label>
-    <input type="text" id="p2n3" oninput = "value=value.replace(/[^\d]/g,'')">
-    <button id="maxofthree" onclick="maxOfThree();">MaxOfThree</button>
-
-    <!-- practice3 -->
-    <hr/>
-    <h2>practice3</h2>
-    <p>Write a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise</p>
-    <label for="p3n1">Input n1:</label>
-    <input type="text" id="p3n1" maxlength="1" oninput = "value=value.replace(/[\s]/g,'')">
-    <button id="isVowel" onclick="isVowel();">isVowel</button>
-
+    <h1>JavaScript Environment</h1>
     <!-- practice4 -->
     <hr/>
     <h2>practice4</h2>
     <p>Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24</p>
+    <p>Use map/filter/reduce Array methods instead of for loops</p>
     <label for="p4n1">Input n1:</label>
     <input type="text" id="p4n1" oninput = "value=value.replace(/[^\d]/g,'')">
     <button id="inputToArr" onclick="inputToArr();">Input number to arr</button>
@@ -62,23 +33,16 @@
     <hr/>
     <h2>practice5</h2>
     <p>Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj"</p>
+    <p>Use map/filter/reduce Array methods instead of for loops</p>
     <label for="p5n1">Input n1:</label>
     <input type="text" id="p5n1">
     <button id="reverse" onclick="reverse();">reverse</button>
-
-    <!-- practice6 -->
-    <hr/>
-    <h2>practice6</h2>
-    <p>Write a function findLongestWord() that takes an array of words and returns the length of the longest one.</p>
-    <label for="p6n1">Input n1:</label>
-    <input type="text" id="p6n1">
-    <button id="inputStrToArr" onclick="inputStrToArr();">Input String to Arr</button>
-    <button id="findLongestWord" onclick="findLongestWord();">findLongestWord</button>
 
     <!-- practice7 -->
     <hr/>
     <h2>practice7</h2>
     <p>Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i</p>
+    <p>Use map/filter/reduce Array methods instead of for loops</p>
     <label for="p7n1">Input n1:</label>
     <input type="text" id="p7n1">
     <button id="inputStr1ToArr" onclick="inputStr1ToArr();">Input String to Arr</button>
@@ -88,5 +52,5 @@
     <button id="filterLongWords" onclick="filterLongWords();">filterLongWords</button>
 
 </body>
-<script type="application/javascript" src="js/basicJs.js"></script>
+<script type="application/javascript" src="js/jsEnvironment.js"></script>
 </html>
