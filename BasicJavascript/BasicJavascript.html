@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="icon" href="images/fluidicon.png">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="basic_javascript">
+    <meta name="author" content="Longxiang">
+    <style>
+        hr{margin-top: 20px;}
+        button{border: 2px solid blue;margin: 10px;}
+        h1{text-align: center;}
+        p{background-color: yellow;}
+    </style>
+</head>
+
+<body>
+    <h1>Basic JavaScript</h1>
+    <!-- practice1 -->
+    <hr/>
+    <h2>practice1</h2>
+    <p>Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript</p>
+    <label for="n1">Input n1:</label>
+    <input type="text" id="n1" oninput = "value=value.replace(/[^\d]/g,'')">
+    <label for="n2">Input n2:</label>
+    <input type="text" id="n2" oninput = "value=value.replace(/[^\d]/g,'')">
+    <button id="max" onclick="max();">Max</button>
+
+    <!-- practice2 -->
+    <hr/>
+    <h2>practice2</h2>
+    <p>Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them</p>
+    <label for="p2n1">Input n1:</label>
+    <input type="text" id="p2n1" oninput = "value=value.replace(/[^\d]/g,'')">
+    <label for="p2n2">Input n2:</label>
+    <input type="text" id="p2n2" oninput = "value=value.replace(/[^\d]/g,'')">
+    <label for="p2n3">Input n3:</label>
+    <input type="text" id="p2n3" oninput = "value=value.replace(/[^\d]/g,'')">
+    <button id="maxofthree" onclick="maxOfThree();">MaxOfThree</button>
+
+    <!-- practice3 -->
+    <hr/>
+    <h2>practice3</h2>
+    <p>Write a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise</p>
+    <label for="p3n1">Input n1:</label>
+    <input type="text" id="p3n1" maxlength="1" oninput = "value=value.replace(/[\s]/g,'')">
+    <button id="isVowel" onclick="isVowel();">isVowel</button>
+
+    <!-- practice4 -->
+    <hr/>
+    <h2>practice4</h2>
+    <p>Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24</p>
+    <label for="p4n1">Input n1:</label>
+    <input type="text" id="p4n1" oninput = "value=value.replace(/[^\d]/g,'')">
+    <button id="inputToArr" onclick="inputToArr();">Input number to arr</button>
+    <button id="sumArr" onclick="sumArr();">sumArr</button>
+    <button id="multiplyArr" onclick="multiplyArr();">multiplyArr</button>
+
+    <!-- practice5 -->
+    <hr/>
+    <h2>practice5</h2>
+    <p>Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj"</p>
+    <label for="p5n1">Input n1:</label>
+    <input type="text" id="p5n1">
+    <button id="reverse" onclick="reverse();">reverse</button>
+
+    <!-- practice6 -->
+    <hr/>
+    <h2>practice6</h2>
+    <p>Write a function findLongestWord() that takes an array of words and returns the length of the longest one.</p>
+    <label for="p6n1">Input n1:</label>
+    <input type="text" id="p6n1">
+    <button id="inputStrToArr" onclick="inputStrToArr();">Input String to Arr</button>
+    <button id="findLongestWord" onclick="findLongestWord();">findLongestWord</button>
+
+    <!-- practice7 -->
+    <hr/>
+    <h2>practice7</h2>
+    <p>Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i</p>
+    <label for="p7n1">Input n1:</label>
+    <input type="text" id="p7n1">
+    <button id="inputStr1ToArr" onclick="inputStr1ToArr();">Input String to Arr</button>
+    <label for="p7n2">Input n2:</label>
+    <input type="text" id="p7n2" oninput = "value=value.replace(/[^\d]/g,'')">
+    <button id="inputInteger" onclick="inputInteger();">Input Integer i</button>
+    <button id="filterLongWords" onclick="filterLongWords();">filterLongWords</button>
+
+</body>
+</html>
+<script type="application/javascript">
+    //practice1
+    function max(){
+        let n1 = document.getElementById("n1").value;
+        let n2 = document.getElementById("n2").value;
+        if(isEmpty(n1) || isEmpty(n2)){
+            alert("please fill input n1 and input n2 numbers!");
+            return;
+        }
+        if (n1 > n2){
+            alert("Max number is :"+n1);
+        }else{
+            alert("Max number is :"+n2);
+        }
+        document.getElementById("n1").value = "";
+        document.getElementById("n2").value = "";
+    };
+
+    //practice2
+    function maxOfThree(){
+        let n1 = document.getElementById("p2n1").value;
+        let n2 = document.getElementById("p2n2").value;
+        let n3 = document.getElementById("p2n3").value;
+        let max = n1;
+        if(isEmpty(n1) || isEmpty(n2) || isEmpty(n3) ){
+            alert("please fill input n1, input n2 and input n3 numbers!");
+            return;
+        }
+        if (n2 > max){
+            max = n2;
+        }
+        if (n3 > max){
+            max = n3;
+        }
+        alert("Max number is :"+max);
+        document.getElementById("p2n1").value = "";
+        document.getElementById("p2n2").value = "";
+        document.getElementById("p2n3").value = "";
+    };
+
+    //practice3
+    function isVowel(){
+        let n1 = document.getElementById("p3n1").value;
+        if(isEmpty(n1)){
+            alert("please fill input n1 a character!");
+            return;
+        }
+        let arrvowel = ["a","e","i","o","u","A","E","I","O","U"];
+        for(const v of arrvowel){
+            if(n1 === v){
+                alert("\""+n1+ "\" is a vowel!");
+                return;
+            }
+        }
+        alert(n1+ " is not a vowel!");
+        document.getElementById("p3n1").value = "";
+    };
+
+    //practice4
+    let p4arr = [];
+    function inputToArr() {
+        let n1 = document.getElementById("p4n1").value;
+        if(isEmpty(n1)){
+            alert("please fill input n1 a number");
+            return;
+        }
+        p4arr.push(Number(n1));
+        document.getElementById("p4n1").value = "";
+    }
+    function sumArr() {
+        if (p4arr.length === 0){
+            alert("please fill numbers into array!");
+            return;
+        }
+        let sum = 0;
+        for (const v of p4arr){
+            sum  = sum+v;
+        }
+        alert("[ "+p4arr+" ] all numbers is summed equal to "+sum);
+        p4arr = [];
+    }
+    function multiplyArr() {
+        if (p4arr.length === 0){
+            alert("please fill numbers into array!");
+            return;
+        }
+        let multiply = 1;
+        for (const v of p4arr){
+            multiply  = multiply*v;
+        }
+        alert("[ "+p4arr+" ] all numbers are multiplied equal to "+multiply);
+        p4arr = [];
+    }
+
+    //practice5
+    function reverse(){
+        let reverseStr = "";
+        let n1 = document.getElementById("p5n1").value;
+        if(isEmpty(n1)){
+            alert("please fill input n1 a String!");
+            return;
+        }
+        for(let i= n1.length-1;i>=0;i--){
+            reverseStr+=n1.charAt(i);
+        }
+        alert("\""+n1+ "\" reverse to \"" + reverseStr+"\"");
+        document.getElementById("p5n1").value = "";
+    };
+
+    //practice6
+    let p6arr = [];
+    function inputStrToArr() {
+        let n1 = document.getElementById("p6n1").value;
+        if(isEmpty(n1)){
+            alert("please fill input n1 a String");
+            return;
+        }
+        p6arr.push(n1);
+        document.getElementById("p6n1").value = "";
+    }
+    function findLongestWord() {
+        if (p6arr.length === 0){
+            alert("please fill Strings into array!");
+            return;
+        }
+        let longestWordLength = p6arr[0].length;
+        let longestWord = p6arr[0];
+        for (const v of p6arr){
+            if (v.length > longestWordLength){
+                longestWord = v;
+                longestWordLength = v.length;
+            }
+        }
+        alert("[ "+p6arr+" ] all String the longestWord is \""+longestWord+"\" and length is "+longestWordLength);
+        p6arr = [];
+    }
+
+    //practice7
+    let p7arr = [];
+    let i = null;
+    function inputStr1ToArr() {
+        let n1 = document.getElementById("p7n1").value;
+        if(isEmpty(n1)){
+            alert("please fill input n1 a String");
+            return;
+        }
+        p7arr.push(n1);
+        document.getElementById("p7n1").value = "";
+    }
+    function inputInteger() {
+        let n2 = document.getElementById("p7n2").value;
+        if(isEmpty(n2)){
+            alert("please fill input n2 a Integer");
+            return;
+        }
+        i = Number(n2);
+        document.getElementById("p7n2").value = "";
+    }
+    function filterLongWords() {
+        let LongWords=[];
+        if (p7arr.length === 0){
+            alert("please fill Strings into array!");
+            return;
+        }
+        if(isEmpty(i)){
+            alert("please fill input Integer i");
+            return;
+        }
+        for (const v of p7arr){
+            if (v.length > i){
+                LongWords.push(v);
+            }
+        }
+        if(LongWords.length === 0){
+            alert("[ "+p7arr+" ] all words, no words is longer than "+i);
+        }else{
+            alert("[ "+p7arr+" ] all words, are longer than "+i+" is \""+LongWords+"\"");
+        }
+        p7arr = [];
+        i = null;
+    }
+
+    //practice8
+    //a
+    const a = [1,3,5,3,3];
+    const b = a.map(function(elem) {
+        return elem*10;
+    })
+    console.log("-------------------------practice8(a)-------------------------");
+    console.log(b);
+    console.log("-------------------------practice8(a)-------------------------");
+
+    //b
+    const c = a.filter(function(elem){
+        return elem === 3;
+    });
+    console.log("-------------------------practice8(b)-------------------------");
+    console.log(c);
+    console.log("-------------------------practice8(b)-------------------------");
+
+    //c
+    const d = a.reduce(function(pre,cur){
+        return pre*cur;
+    },1);
+    console.log("-------------------------practice8(c)-------------------------");
+    console.log(d);
+    console.log("-------------------------practice8(c)-------------------------");
+
+
+    function isEmpty(e) {
+        if(e===null || e === undefined || e ===""){
+            return true;
+        }
+        return false;
+    }
+</script>
