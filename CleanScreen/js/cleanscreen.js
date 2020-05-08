@@ -32,7 +32,11 @@ $(function () {
         });
     }
 
+    let i;
     $("#apply").on("click", function () {
+        if(!isEmpty(i)){
+            clearInterval(i);
+        }
         $(".container").empty();
         let windowwidth = $(window).width();
         let width = $("#width").val();
@@ -66,7 +70,7 @@ $(function () {
             }));
         }
 
-        setInterval(grow,rate,parseInt(growAmount));
+        i = setInterval(grow,rate,parseInt(growAmount));
 
     });
     for (let i = 1; i < 15; i++){
