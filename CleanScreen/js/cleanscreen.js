@@ -47,7 +47,7 @@ $(function () {
             alert("Width is more than window width! Please enter a reasonable width!");
             return;
         }
-        let per = Math.floor(width/windowwidth*50);
+        let per = Math.floor(width/windowwidth*100);
         console.log(per);
 
         for (let i = 0; i < numbers; i++) {
