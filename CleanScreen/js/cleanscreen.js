@@ -66,7 +66,7 @@ $(function () {
             }));
         }
 
-        setInterval(grow,rate,parseInt(growAmount));
+        setInterval(grow,parseInt(growAmount),rate);
 
     });
     for (let i = 1; i < 15; i++){
