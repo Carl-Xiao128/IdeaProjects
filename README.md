@@ -1,2 +1,2 @@
 # IdeaProjects
-A Learning HTML/CSS Page
+WAP course that Learning JavaScript, HTML, CSS
